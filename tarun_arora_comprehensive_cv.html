@@ -1,0 +1,954 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tarun Arora - Executive CV</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Calibri', Arial, sans-serif;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 1in;
+            line-height: 1.4;
+            color: #2c3e50;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .name {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            color: #7f8c8d;
+            margin: 0.5rem 0;
+            font-weight: 400;
+        }
+
+        .contact {
+            font-size: 0.95rem;
+            color: #5d6d7e;
+            margin-top: 1rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-icon {
+            color: #3498db;
+            font-size: 1.1rem;
+        }
+
+        .summary {
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: justify;
+            color: #34495e;
+        }
+
+        .metrics {
+            display: flex;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+            background: #ecf0f1;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .metric {
+            text-align: center;
+            flex: 1;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #3b4a59;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: #3b4a59;
+            font-weight: 500;
+        }
+
+        .job {
+            margin-bottom: 2rem;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: between;
+            align-items: baseline;
+            margin-bottom: 1rem;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .company {
+            font-size: 1rem;
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .duration {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-left: auto;
+        }
+
+        .expertise-sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .expertise-column {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid;
+        }
+
+        .expertise-column.expertise { border-left-color: #3498db; }
+        .expertise-column.leadership { border-left-color: #e74c3c; }
+        .expertise-column.impact { border-left-color: #27ae60; }
+
+        .expertise-column h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .expertise-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .expertise-column li {
+            margin: 0.4rem 0;
+            padding-left: 1rem;
+            position: relative;
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        .expertise-column li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .skill-group {
+            flex: 1;
+        }
+
+        .skill-group h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-group li {
+            font-size: 0.9rem;
+            color: #5d6d7e;
+            margin: 0.3rem 0;
+        }
+
+        .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .institution {
+            color: #5d6d7e;
+            font-size: 0.95rem;
+        }
+
+        .patents {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .patent-numbers {
+            font-family: 'Courier New', monospace;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .achievements {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .achievements li {
+            margin: 0.8rem 0;
+            padding-left: 1rem;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .achievements li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .award-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #f39c12;
+        }
+
+        .award-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.95rem;
+        }
+
+        .award-desc {
+            color: #5d6d7e;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .tools-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .tools-category h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tools-category .tool-icon {
+            color: #3498db;
+            font-size: 1.1rem;
+        }
+
+        .tools-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .tool-item {
+            background: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #34495e;
+            text-align: center;
+            border: 1px solid #ecf0f1;
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .program-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2c3e50;
+        }
+
+        .program-category h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .program-category .program-icon {
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .program-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .program-list li {
+            background: white;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #2c3e50;
+            border-left: 3px solid #2c3e50;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .program-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0.5rem;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .personal-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 2rem 0;
+            border: 1px solid #e1e8ed;
+        }
+
+        .personal-text {
+            font-size: 1rem;
+            color: #34495e;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        @media print {
+            body { padding: 0.5in; font-size: 0.9rem; }
+            .metrics { background: #f8f9fa; }
+            .expertise-sections { grid-template-columns: 1fr; }
+            .tools-grid, .programs-grid, .awards-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">TARUN ARORA</h1>
+        <div class="title">Transformation Catalyst | AI & Governance Leader | Security & Risk Practitioner</div>
+			<div class="contact" style="font-family: Arial, sans-serif; font-size: 14px; color: #2c3e50;">
+				<i class="fas fa-envelope"></i> tarun.arora.mtqm@gmail.com • 
+				<i class="fas fa-phone"></i> +91-9535782828 • 
+				<i class="fab fa-github"></i> tarun82/tarunarora82 • 
+				<i class="fab fa-linkedin"></i> 
+				<a href="https://www.linkedin.com/in/tarun-arora-6175aa12" target="_blank" style="color: #2c3e50; text-decoration: none;">
+					goto/tarun-arora
+				</a> • 
+				<i class="fas fa-map-marker-alt"></i> Bengaluru, India
+			</div>
+		</div>
+
+
+
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-user section-icon"></i>
+            Executive Summary
+        </div>
+        <div class="summary">
+            Distinguished transformation leader with over 18 years of experience advancing organizational excellence through AI-driven innovation, enterprise process optimization, and strategic governance. Recognized for deep expertise in secure development practices, risk mitigation, and leading high-performing cross-functional teams. Successfully spearheaded enterprise-wide AI standards integration and contributed to intellectual property growth with four filed patents in Applied AI.
+        </div>
+
+        <div class="metrics">
+            <div class="metric">
+                <span class="metric-value">5000+</span>
+                <div class="metric-label">Engineers Trained<br>AI, ML & Operational Excellence</div>
+            </div>
+            <div class="metric">
+                <span class="metric-value">$20M</span>
+                <div class="metric-label">ROI through Automation<br>Process Excellence & AI</div>
+            </div>
+            <div class="metric">
+                <span class="metric-value">4</span>
+                <div class="metric-label">Innovation Patents<br>Applied AI</div>
+            </div>
+            <div class="metric">
+                <span class="metric-value">75+</span>
+                <div class="metric-label">Certifications<br>Continuous Learning</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-briefcase section-icon"></i>
+            Professional Experience
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Engineer(Grade 9)</div>
+                    <div class="company">Intel Technologies Limited, Bengaluru</div>
+                </div>
+                <div class="duration">2022 - YTD</div>
+            </div>
+            <div class="expertise-sections">
+                <div class="expertise-column expertise">
+                    <h4>Expertise</h4>
+                    <ul>
+                        <li>AI Standards Integration across product lifecycle systems</li>
+                        <li>Secure Development using AI for threat modeling and risk assessment</li>
+                        <li>Next-Gen AI: GHCP, Agentic Frameworks, End Mile AI Solutions</li>
+                        <li>Product Lifecycle Management optimization</li>
+                        <li>Business Intelligence and automation frameworks</li>
+                    </ul>
+                </div>
+                <div class="expertise-column leadership">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>Technical Leadership for AI integration and quality excellence</li>
+                        <li>Design and delivery of solutions for internal/external customers</li>
+                        <li>Champion Security- and AI-first mindset across governance and innovation</li>
+                        <li>Strategic stakeholder engagement across organizational levels</li>
+                        <li>Strategic problem-solving across complex technical and business challenges</li>
+                    </ul>
+                </div>
+                <div class="expertise-column impact">
+                    <h4>Impact</h4>
+                    <ul>
+                        <li>Contributed to patent portfolio development in Applied AI</li>
+                        <li>Implemented comprehensive risk management frameworks</li>
+                        <li>Developed self-sustaining high-performance teams</li>
+                        <li>Integrated productivity tools achieving efficiency gains</li>
+                        <li>Established AI-driven decision-making capabilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Engineer(Grade 8)</div>
+                    <div class="company">Intel Technologies Limited, Bengaluru</div>
+                </div>
+                <div class="duration">2018 - 2022</div>
+            </div>
+            <div class="expertise-sections">
+                <div class="expertise-column expertise">
+                    <h4>Expertise</h4>
+                    <ul>
+                        <li>Technical architecture solutions for enhanced decision-making</li>
+                        <li>Automation frameworks and process optimization</li>
+                        <li>Secure development initiatives with enterprise rollout of standards</li>
+                        <li>NLP, Deep Learning frameworks for operational excellence</li>
+                    </ul>
+                </div>
+                <div class="expertise-column leadership">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>Led engineering teams in complex technical initiatives</li>
+                        <li>Mentored operational excellence programs</li>
+                        <li>Technical presentations at internal and external conferences</li>
+                        <li>Deployed Productivity and Quality Metrics Framework for management</li>
+                        <li>Championed software quality across QA, compliance, and security</li>
+                    </ul>
+                </div>
+                <div class="expertise-column impact">
+                    <h4>Impact</h4>
+                    <ul>
+                        <li>Contributed to patent portfolio development in Applied AI</li>
+                        <li>Delivered measurable operational improvements</li>
+                        <li>Enhanced software engineering practices</li>
+                        <li>Established foundation for AI standards integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Engineer(Grade 7)</div>
+                    <div class="company">Intel Technologies Limited, Bengaluru</div>
+                </div>
+                <div class="duration">2014 - 2018</div>
+            </div>
+            <div class="expertise-sections">
+                <div class="expertise-column expertise">
+                    <h4>Expertise</h4>
+                    <ul>
+                        <li>Agile, XP Practices, Program Management, Lean, Six Sigma</li>
+                        <li>Static analysis tools and sanitizer tools</li>
+                        <li>Quality management systems implementation</li>
+                        <li>Risk lifecycle management and secure code reviews</li>
+                        <li>Applied Statistics and Machine Learning strategies</li>
+                    </ul>
+                </div>
+                <div class="expertise-column leadership">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>Team development in quality practices</li>
+                        <li>Software Process assessment, Quality Belt Program</li>
+                        <li>Knowledge Management & Agile Framework establishment</li>
+                    </ul>
+                </div>
+                <div class="expertise-column impact">
+                    <h4>Impact</h4>
+                    <ul>
+                        <li>Implemented comprehensive quality frameworks</li>
+                        <li>Established secure development practices</li>
+                        <li>Enhanced software reliability and performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Engineer(Grade 6)</div>
+                    <div class="company">Intel Technologies Limited, Bengaluru</div>
+                </div>
+                <div class="duration">2012 - 2014</div>
+            </div>
+            <div class="expertise-sections">
+                <div class="expertise-column expertise">
+                    <h4>Expertise</h4>
+                    <ul>
+                        <li>Quality engineering methodologies</li>
+                        <li>Process optimization techniques</li>
+                        <li>Software development lifecycle management</li>
+                    </ul>
+                </div>
+                <div class="expertise-column leadership">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>Junior team leadership and development</li>
+                        <li>Quality training program delivery</li>
+                        <li>Cross-team collaboration</li>
+                    </ul>
+                </div>
+                <div class="expertise-column impact">
+                    <h4>Impact</h4>
+                    <ul>
+                        <li>Established quality processes and standards</li>
+                        <li>Improved software delivery efficiency</li>
+                        <li>Built foundation for operational excellence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Operational Excellence Manager</div>
+                    <div class="company">Bharti Airtel Limited, Lucknow</div>
+                </div>
+                <div class="duration">2012 - 2012</div>
+            </div>
+            <div class="expertise-sections">
+                <div class="expertise-column expertise">
+                    <h4>Expertise</h4>
+                    <ul>
+                        <li>Telecommunications infrastructure transformation</li>
+                        <li>Data-driven decision making frameworks</li>
+                        <li>Analytical insights and performance optimization</li>
+                    </ul>
+                </div>
+                <div class="expertise-column leadership">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>Spearheaded comprehensive transformation initiatives</li>
+                        <li>Led complex stakeholder engagement programs</li>
+                        <li>Cross-functional collaboration leadership</li>
+                    </ul>
+                </div>
+                <div class="expertise-column impact">
+                    <h4>Impact</h4>
+                    <ul>
+                        <li>Implemented operational efficiency improvements</li>
+                        <li>Drove efficiency through analytical insights</li>
+                        <li>Enhanced telecommunications operational excellence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Lead Executive - Quality & Process Optimization</div>
+                    <div class="company">Aricent Technologies, Gurgaon</div>
+                </div>
+                <div class="duration">2008 - 2012</div>
+            </div>
+            <div class="expertise-sections">
+                <div class="expertise-column expertise">
+                    <h4>Expertise</h4>
+                    <ul>
+                        <li>Quality assurance across software development lifecycle</li>
+                        <li>Quality management systems and operational frameworks</li>
+                        <li>Client relationship optimization and service delivery</li>
+                    </ul>
+                </div>
+                <div class="expertise-column leadership">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>Led comprehensive quality improvement initiatives</li>
+                        <li>Executed strategic quality improvement programs</li>
+                        <li>Quality leadership foundation establishment</li>
+                    </ul>
+                </div>
+                <div class="expertise-column impact">
+                    <h4>Impact</h4>
+                    <ul>
+                        <li>Implemented robust quality management systems</li>
+                        <li>Achieved measurable business impact through quality programs</li>
+                        <li>Sustained customer satisfaction through optimized delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-tools section-icon"></i>
+            Hands on with Tools
+        </div>
+        <div class="tools-grid">
+            <div class="tools-category">
+                <h4><i class="fas fa-code tool-icon"></i>Engineering Tools</h4>
+                <div class="tools-list">
+                    <div class="tool-item">Git/GitHub/Gerrit</div>
+                    <div class="tool-item">Protex/Blackduck</div>
+                    <div class="tool-item">Docker/FastAPI/Flask</div>
+                    <div class="tool-item">Santizer Tools</div>
+                    <div class="tool-item">JIRA</div>
+                    <div class="tool-item">ClangTidy</div>
+                    <div class="tool-item">VS Code</div>
+                    <div class="tool-item">MO365</div>
+                    <div class="tool-item">Coverity</div>
+                    <div class="tool-item">Klocwork</div>
+                </div>
+            </div>
+            <div class="tools-category">
+                <h4><i class="fas fa-chart-bar tool-icon"></i>Automation & BI Tools</h4>
+					<div class="tools-list">
+						<!-- Business Intelligence & Visualization -->
+						<div class="tool-item">Power BI</div>
+						<div class="tool-item">Tableau</div>
+						<div class="tool-item">Qlik Sense</div>
+
+						<!-- Automation & Integration -->
+						<div class="tool-item">Power Automate</div>
+						<div class="tool-item">Power Apps</div>
+						<div class="tool-item">n8n</div>
+						<div class="tool-item">GitHub Actions</div>
+
+						<!-- Development & Scripting -->
+						<div class="tool-item">Python Scripts</div>
+						<div class="tool-item">SQL/MySQL/ODBC</div>
+						<div class="tool-item">Excel VBA</div>
+					</div>
+            </div>
+            <div class="tools-category">
+                <h4><i class="fas fa-robot tool-icon"></i>AI Tool Stacks</h4>
+                <div class="tools-list">
+                    <div class="tool-item">Python</div>
+                    <div class="tool-item">TensorFlow</div>
+                    <div class="tool-item">GHCP</div>
+                    <div class="tool-item">Scikit-learn</div>
+                    <div class="tool-item">GenAI APIs</div>
+                    <div class="tool-item">Azure AI Foundry/Open AI</div>
+                    <div class="tool-item">Hugging Face</div>
+                    <div class="tool-item">LangChain/LangGraph</div>
+                    <div class="tool-item">Ollama</div>
+                    <div class="tool-item">Jupyter</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-project-diagram section-icon"></i>
+            Leadership Programs
+        </div>
+        <div class="programs-grid">
+            <div class="program-category">
+                <h4><i class="fas fa-cogs program-icon"></i>Engineering Excellence Projects</h4>
+                <ul class="program-list">
+                    <li>Voice of Customer Program</li>
+                    <li>Static Analysis Tools Enterprise Deployment</li>
+                    <li>Code Quality & Security Standards Program</li>
+                    <li>Agile Transformation Framework</li>
+                    <li>Software Process Assessment Program</li>
+                    <li>Risk & AI Based Code Quality Framework</li>
+					<li>AI Standards Integration across Product Lifecycle</li>
+                </ul>
+            </div>
+            <div class="program-category">
+                <h4><i class="fas fa-brain program-icon"></i>BI,AI & Automation Projects</h4>
+                <ul class="program-list">
+                    <li>Self Service Machine Learning Platform</li>
+                    <li>Next-Gen AI: Agentic Frameworks Implementation for Code Quality</li>
+                    <li>Software Quality Health Dashboards </li>
+                    <li>Productivity & Quality Metrics Framework</li>
+                    <li>Software Operations Excellence Dashboards</li>
+                    <li>Generative AI Security Risk Framework</li>
+                </ul>
+            </div>
+            <div class="program-category">
+                <h4><i class="fas fa-chart-line program-icon"></i>Learning & Development Projects</h4>
+                <ul class="program-list">
+                    <li>AI Hackathon Programs & Innovation Challenges</li>
+                    <li>Software Quality Belt Program</li>
+                    <li>Technical Leadership Development Program</li>
+                    <li>Intel Unnati Under Graduate Skill Program</li>
+                    <li>AI & ML Training Programs</li>
+                    <li>Six Sigma Mentor Program</li>
+					<li>PM CoP Program</li>
+					<li>Lean and Agile at Practice</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-graduation-cap section-icon"></i>
+            Core Competencies
+        </div>
+        <div class="skills">
+            <div class="skill-group">
+                <h4>Strategic Leadership</h4>
+                <ul>
+                    <li>Organizational Transformation</li>
+                    <li>Change Management</li>
+                    <li>Executive Engagement</li>
+                    <li>Cross-functional & Geo Leadership</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4>AI & Analytics</h4>
+                <ul>
+                    <li>Applied Statistics & Machine Learning</li>
+                    <li>Generative & Agentic AI</li>
+                    <li>Business Intelligence</li>
+                    <li>Data-driven Decision Making</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4>Security & Risk</h4>
+                <ul>
+                    <li>Risk Lifecycle Management</li>
+                    <li>Threat Modeling</li>
+                    <li>Secure Development Practices</li>
+                    <li>Compliance Frameworks</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h4>Operational Excellence</h4>
+                <ul>
+                    <li>Six Sigma Black Belt</li>
+                    <li>PMP Certified</li>
+                    <li>Lean Methodologies</li>
+                    <li>Total Quality Management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<div class="section">
+    <div class="section-title">
+        <i class="fas fa-file-contract section-icon"></i>
+        Standards and Specifications
+    </div>
+    <div class="skills">
+        <div class="skill-group">
+            <h4>Quality</h4>
+            <ul>
+                <li>ISO 9001</li>
+                <li>TL9000</li>
+                <li>Process Maturity Models (CMMI, ITIL)</li>
+                <li>ISO 16949</li>
+            </ul>
+        </div>
+        <div class="skill-group">
+            <h4>Security</h4>
+            <ul>
+                <li>Secure Development Lifecycle (SDL)</li>
+                <li>OWASP & Threat Modeling Standards</li>
+                <li>ISO 270001/2</li>
+                <li>NIST Cybersecurity Framework</li>
+            </ul>
+        </div>
+        <div class="skill-group">
+            <h4>AI Governance</h4>
+            <ul>
+                <li>ISO/IEC 42001</li>
+                <li>NIST AI Risk Management/ISO 23894</li>
+                <li>ISO/IEC 25058/23 - SQuARE/6254</li>
+                <li>EU AI Act/OECD AI Principles</li>
+            </ul>
+        </div>
+        <div class="skill-group">
+            <h4>Safety & Legal</h4>
+            <ul>
+                <li>Data Privacy & Protection (GDPR, DPDP, CPRA, HIPAA)</li>
+                <li>SPDX/ISO/IEC 5962:2021</li>
+                <li>OpenChain ISO/IEC 5230</li>
+                <li>IEC 61508/ISO 26262</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-user-graduate section-icon"></i>
+            Education & Credentials
+        </div>
+        <div class="education-item">
+            <div class="degree">Master of Total Quality Management</div>
+            <div class="institution">Lucknow University • 2007 • <strong>100% Score in Applied Statistics</strong></div>
+        </div>
+        <div class="education-item">
+            <div class="degree">Bachelor of Technology - Industrial Production Engineering</div>
+            <div class="institution">Uttar Pradesh Technical University • 2004</div>
+        </div>
+        <div class="education-item">
+            <div class="degree">Business Analytics & Intelligence (BAI5)</div>
+            <div class="institution">IIM Bengaluru • 2015 • <strong>Most Recommended AI Project Award</strong></div>
+        </div>
+        <div class="education-item">
+            <div class="degree">Professional Certifications</div>
+            <div class="institution">Six Sigma Black Belt • PMP • PMI-ACP • 75+ Continuous Learning Certifications</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <i class="fas fa-trophy section-icon"></i>
+            Innovation & Recognition
+        </div>
+        <div class="patents">
+            <strong>Strategic Patent Portfolio - Applied AI & Product Lifecycle Management</strong>
+            <div class="patent-numbers">18/963,848 • 19/002,585 • 19/002,624 • 18/979,688</div>
+        </div>
+
+        <div class="awards-grid">
+            <div class="award-card">
+                <div class="award-title">🏆 Divisional Excellence Awards</div>
+                <div class="award-desc">Recipient of multiple awards recognizing exceptional leadership in driving transformation and process optimization across strategic initiatives</div>
+            </div>
+            <div class="award-card">
+                <div class="award-title">🌟 Above and Beyond Awards</div>
+                <div class="award-desc">Trusted mentor and subject matter expert across software quality, security, legal compliance, AI, and business intelligence—serving as the go-to resource for cross-functional guidance and strategic enablement</div>
+            </div>
+            
+        </div>
+
+        <ul class="achievements">
+            <li><strong>Trained 5000+ engineers and college graduates</strong> on AI, ML and Operational Excellence techniques</li>
+			<li><strong>Mentored 7 Real World Projects in last 3 years with college graduates</strong> on AI & ML</li>
+            <li><strong>Presentations & Demonstrations</strong> on Operational Excellence, Automation and AI at internal and external conferences</li>
+            <li><strong>Curated and Designed Programs</strong> including AI Hackathons and Software Quality Belt initiatives</li>
+            <li><strong>Industry AI Mentor</strong> - Intel Technologies undergraduate development program leadership</li>
+            <li><strong>Most Recommended AI Project</strong> - IIM Bengaluru BAI Course recognition</li>
+        </ul>
+    </div>
+
+    <div class="personal-section">
+        <div class="section-title" style="justify-content: center; border: none; padding: 0; margin-bottom: 1rem;">
+            <i class="fas fa-heart section-icon"></i>
+            Personal
+        </div>
+        <div class="personal-text">
+            On weekends I like spending time with my family. In my personal time, I delight in discovering new worlds and trends through continuous learning, cultivating mindfulness and balance with yoga, and embracing diverse cultures through travel.
+        </div>
+    </div>
+</body>
+</html>
